@@ -4,7 +4,13 @@ https://github.com/mumble-voip/mumble-scripts/blob/cc1888dcf96c46375efdaf6ac3c5a
 
 Adapted from munin to zabbix to get murmur stats into zabbix
 
-Requires zeroc-ice, python2.7 and pip2
+Requires zeroc-ice, python2.7/pip2 or python3 and pip3
 
-`pip install zeroc-ice`
+*Install Instructions*
+
 `apt install python2 python2-dev python-pip`
+`pip install zeroc-ice`
+or
+
+`apt install python3 python3-dev python3-pip`
+`pip install zeroc-ice`
