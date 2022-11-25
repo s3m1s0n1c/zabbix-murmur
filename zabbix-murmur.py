@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8
 #
-# munin-murmur.py
+# zabbix-murmur.py
 # Copyright (c) 2010 - 2016, Natenom <natenom@natenom.com>
 #
 # All rights reserved.
@@ -160,7 +160,7 @@ else:
             print('channels: Channel count')
             print('uptime: Server Uptime')
             print(' ')
-            print('eg ./zabbix-munin.py users')
+            print('eg ./zabbix-murmur.py users')
 
 ice.destroy()
 
