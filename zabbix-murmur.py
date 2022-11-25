@@ -150,14 +150,15 @@ if (sys.argv[1:]):
     if (sys.argv[1] == "uptime"):
      print("%.2f" % (float(meta.getUptime())/60/60/24))
 else:
-            print('Help for Zabbix Murmur Script')
-            print(' ')
+          print('Help for Zabbix Murmur Script')
+            print(' ')  
             print('users: Number of users online')
             print('muted: Number of users muted')
             print('registered: Number of users registered (Authenticated)')
-            print('unregistered: Number of users unregistered (Not authenticated)')
+            print('unregistered: Number of users unregistered (Not Authenticated)')
             print('bans: Count of Bans on server')
             print('channels: Channel count')
+            print('uptime: Server Uptime')
             print(' ')
             print('eg ./zabbix-munin.py users')
 
