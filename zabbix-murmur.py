@@ -136,19 +136,19 @@ for key in list(onlineusers.keys()):
 
 if (sys.argv[1:]):
     if (sys.argv[1] == "users"):
-     print("usersall.value %i" % (len(onlineusers)))
+     print(len(onlineusers))
     if (sys.argv[1] == "muted"):
-     print("usersmuted.value %i" % (users_muted))
+     print(users_muted)
     if (sys.argv[1] == "registered"):
-     print("usersregistered.value %i" % (users_registered))
+     print(users_registered)
     if (sys.argv[1] == "unregistered"):
-     print("usersunregistered.value %i" % (users_unregistered))
+     print(users_unregistered)
     if (sys.argv[1] == "bans"):
-     print("bancount.value %i" % (len(server.getBans())))
+     print(len(server.getBans()))
     if (sys.argv[1] == "channels"):
-     print("channelcount.value %.2f" % (len(server.getChannels())/1))
+     print("%.2f" % (len(server.getChannels())/1))
     if (sys.argv[1] == "uptime"):
-     print("uptime.value %.2f" % (float(meta.getUptime())/60/60/24))
+     print("%.2f" % (float(meta.getUptime())/60/60/24))
 else:
             print('Help for Zabbix Murmur Script')
             print(' ')
@@ -162,6 +162,7 @@ else:
             print('eg ./zabbix-munin.py users')
 
 ice.destroy()
+
 
 
 
